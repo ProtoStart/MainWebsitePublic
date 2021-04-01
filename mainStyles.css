@@ -82,9 +82,16 @@ input{
 /*Main pallete*/
 
 #categoriesOuter, #anywhereDescription, #shoppingListerDescription{
-	background-color: Orange;
+	background-color: #ff8b33; /*Matches colour of title bar on r/ProtoStart*/
 }
 
+.OrangeTwo{
+	background-color: #ffae70; /*Matches colour of the about community header bar on r/ProtoStart*/
+}
+
+.ProtoStartPurple{
+	background-color: #b041d2; /*Matches the post button colour on r/ProtoStart*/
+}
 
 .homepageSection{
 	padding-left:   4px;
