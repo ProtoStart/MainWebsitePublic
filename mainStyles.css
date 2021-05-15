@@ -75,13 +75,18 @@ input{
 	
 }
 
+/* Text adjustment classes*/
+.biggerText{
+	font-size: 105%;
+}
+
 
 /*Different sections should have slightly different colours so that theres an extra visual clue that they are different sections*/
 /*
 
 /*Main pallete*/
 
-#categoriesOuter, #anywhereDescription, #shoppingListerDescription{
+.OrangeOne{
 	background-color: #ff8b33; /*Matches colour of title bar on r/ProtoStart*/
 }
 
