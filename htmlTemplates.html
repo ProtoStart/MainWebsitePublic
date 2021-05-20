@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ProtoStart HTML template</title>
+		<link rel="stylesheet" href="mainStyles.css"> </link>
+		<!-- Favicon! - Favourites Icon - appears in the tab next to the title in many browsers, and in favourites menus-->
+		<link rel="icon" href="Icons/icon.png" type="image/x-icon"></link>
+		<!-- open source vanilla JS cookie acceptance popup (a cookie popup of some kind is required by EU law if there are any cookies)-->
+		<link rel="stylesheet" href="purecookie.css"/>
+		<script src="purecookie.js"></script>
+    </head>
+    <body>
+		<div class="header">
+			<!-- div for positioning the menu-->
+			<div id="menuTopLayer">
+				<!--<img id="mainMenuIcon" src="Icons/BurgerMenuGreenRounded.png" alt="Icon" width="32" height="32"/>-->
+			</div>
+			<h1>ProtoStart staging area</h1>
+			<p>Lets make dreams become reality</p>
+			
+			<!--<img id="protoStartIcon" src="Icons/icon.png" alt="Icon" width="32" height="32"> in a later update, this can be shown, but needs css to place it on the left, and also to have some usage-->
+		</div>
+		
+		<!-- Main Area - down the middle -->
+		<div id="mainContent">
+			<div class="homepageSection OrangeOne">
+				<h2>HTML Templates page</h2>
+				<p>This page is here to make building other pages easier.</p>
+				<p>Use "view source", the htmlTemplates.html file in our MainWebsite github repo or your browser development tools; to copy HTML from this page, to whereever you need it. Just make sure you understand it before using</p>
+			</div>	
+			<div class="homepageSection OrangeTwo">
+				<h2>Tables in HTML</h2>
+
+				<p>Making tables straight into HTML via a text editor in an html file is pretty easy but also rather laborious. By the HTML default, they lack lots of features and styling that you might expect. Styling them doesn't take too long, but if you need features like filtering, reordering or grouping; then it's probably best to use a component from a library or framework such as jQuery or React.</p>
+				</br>
+				<h3>Simple template</h3>
+				<table>
+					<tr>
+						<th>Header for column 1</th>
+						<th>Header for column 2</th>
+					</tr>
+					<tr>
+						<td>Row 1 col 1 text</td>
+						<td>Row 1 col 2 text</td>
+					</tr>
+					<tr>
+						<td>Row 2 col 1 text</td>
+						<td>Row 2 col 2 text</td>
+					</tr>
+				</table>
+				</br>
+				<h3>Being Efficient</h3>
+				<p>I recommend heavy use of copy and paste to save typing. When adding an entire new table, copy the template below. When adding a row, just copy the last row of whatever table you're adding to and change the details as needed. To add multiple rows copy the last row, remove details, copy the new row, paste until you have all your rows, then fill in the details. Adding an extra collumn to a table, particularly in the middle, is kind of a pain because you have to go though every collumn adding a cell in the correct place and make sure that they match up.</p>
+				<p>Typically people want table headers making up all the cells in the first row, but HTML does not limit you on that. It's usually a good idea to get your headers decided, before putting in the rest of the info, as this helps you know what order the collumns will be</p>
+				</br>
+				<h3>Table Tags explained</h3>
+				<p>4 main tags make up a table.</p>
+				<ul>
+					<li>"table" which literally defines a table, and will have table rows inside.</li>
+					<li>"tr" which is short for "table row", they go inside the table tag. You have one tag per row of the table including header row</li>
+					<li>"th" which is short for "table header" and are a cell of the table that should be treated as a header - the HTML default is that text in them is bold and centered.</li>
+					<li>"td" which is short for "table data". These are the main cells in a table. They go inside "tr" tags, in the order you want them displayed - the top td tag within a tr is the first on the left of that row. Note that to avoid having wonky tables, you need to make sure that there are the same total number of tr's and th's in each collumn.</li>
+				</ul>
+				<h3>Further reading</h3>
+				<a href="https://www.w3schools.com/html/html_tables.asp" target="_blank"> w3schools reference and tutorial</a>, includes how to do several common style changes, and how to make cells that cover multiple collumns or rows. For an example of how to make tables "Zebra striped" (rows alternating background colours so that each line is easier to read) go <a href="https://www.w3schools.com/howto/howto_css_table_zebra.asp"  target="_blank"> here</a>
+				
+			</div>
+			<div class="homepageSection OrangeOne">
+				<h2>Work in progress page</h2>
+				<p>We'll add more templates, and make other improvements to this page over time. Tables are just something Phil was using early on that felt like we needed a good template to reuse for next time.</p>
+			</div>
+			<div id="cookiePopupContainer"></div>
+			<div id="lastUpdated">Last updated 18th May 2021</div>
+		</div>
+	</body>
+</html>
