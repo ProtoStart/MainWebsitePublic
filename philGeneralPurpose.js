@@ -136,8 +136,6 @@ function addButtons(clickEventName, buttonClass, buttonTextArray, idSuffix, cont
 		("presetAddDrink", ["Hot Chocolate"],document.getElementById("categoriesContainer"))  
 	*/  
 
-	
-	
     var indexes;
     for (indexes in buttonTextArray){
         containerDiv.innerHTML += "<button id=\"" + escape(buttonTextArray[indexes]) + idSuffix +"\" class=\"" + buttonClass + "\" onclick=\"" + clickEventName+ "('" + escape(buttonTextArray[indexes]) + idSuffix + "')\">" + buttonTextArray[indexes] + "</button>"
@@ -161,8 +159,7 @@ function changeAmount(id,change) {
 		var removeThing = id.slice(0, (id.length - 6));//find length of string, then take the part of the string from 0 to (length of string - the word we're ignoring)
 		//https://www.w3schools.com/js/js_string_methods.asp
 		removeItem(removeThing);
-  }
-	  
+  }	  
 }
 
 function removeItem(itemID){
@@ -175,12 +172,9 @@ function removeItem(itemID){
 		document.getElementById("totalQuantity").innerHTML  = newTotal.toString();
 		//Remove the entire div for the list item - div ID is passed in
 		//Div will be the only div of that ID within the div "list" 
-		document.getElementById("list").removeChild(document.getElementById(itemID));
-		
+		document.getElementById("list").removeChild(document.getElementById(itemID));	
 	}
 }
-
-
 	
 function categoryChange(categoryID){
 	//UI function - user taps a category button, this handles the top level perspective of what happens then
@@ -203,7 +197,6 @@ function categoryChange(categoryID){
 	//Load the tab content for the category
 	loadTab(category);
 }
-
 
 /*by class we mean css class
 Use in conjuction with hideViaClass(id) and css classes called "hidden" and "showing" that have css to hide/show things
@@ -279,7 +272,6 @@ function hardcodedHTMLDivTabs(tabDivClass, tabButtonClass, showDivId, selectedBu
 	selectViaClass(selectedButtonId);
 }
 
-
 function emptyTab(){
 	//Basically just empty the div tabSelects. In future we might have to do more.
 	document.getElementById("tabSelects").innerHTML = "";
@@ -330,9 +322,7 @@ function newThing(attemptThing, startAmount) {
   //Actually write newHTMl inside an already existing element
   document.getElementById("things").innerHTML += newHTML;
   //this ensure that the element "resetThings" isn't disabled (which it would be if there was nothing in the list
-  document.getElementById("resetThings").disabled = "";
-
-  
+  document.getElementById("resetThings").disabled = ""; 
 }
 
 function resetList(){

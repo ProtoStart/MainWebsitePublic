@@ -3,7 +3,6 @@ html{
 	padding:0px;
 }
 
-
 body{
     text-align: center;
     width: 100%;
@@ -67,12 +66,10 @@ button{
 	 padding-top: 4px;
 	 padding-bottom: 4px;
  }
- 
 
 
 input{
-	box-sizing: border-box; /*Specifies how the visible height and width should be calculated with regard to padding - weirdly the default for inputs is different to most other UI. I could do this with a sweeping reset, but I'd rather just alter elements that I find unintuitive as and when I come across them*/
-	
+	box-sizing: border-box; /*Specifies how the visible height and width should be calculated with regard to padding - weirdly the default for inputs is different to most other UI. I could do this with a sweeping reset, but I'd rather just alter elements that I find unintuitive as and when I come across them*/	
 }
 
 /* Text adjustment classes*/
@@ -83,7 +80,6 @@ input{
 
 /*Different sections should have slightly different colours so that theres an extra visual clue that they are different sections*/
 /*
-
 /*Main pallete*/
 
 .OrangeOne{
@@ -191,12 +187,9 @@ input{
 }
 
 #mainMenuIcon {
-	
-	
 	top: 0px;
 	left: 0px;
 }
-
 
 /*Javascript is used to apply .hidden and .showing as appropriate*/
 .hidden {
@@ -218,8 +211,7 @@ input{
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
 }
 
 /* Modal Content */
@@ -251,7 +243,6 @@ input{
 /* The Close Button */
 .close {
   margin: 3px;
-
   color: #aaaaaa;
   position: absolute; /*Prevents a situation at narrow widths where the close button plus the main part of the modal content becomes wider than the modal, causing the rest of the content dropping lower and spilling out of the modal*/
   right: 8%;
@@ -265,6 +256,7 @@ input{
   text-decoration: none;
   cursor: pointer;
 }
+
 /* ACCORDION*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -326,6 +318,5 @@ input{
 		right: 50%;
 		margin-right: -250px;
 	}
-	
-	
+		
 }
