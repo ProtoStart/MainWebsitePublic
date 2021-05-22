@@ -92,7 +92,12 @@ input{
 
 .ProtoStartPurple{
 	background-color: #b041d2; /*Matches the post button colour on r/ProtoStart*/
+	color: white;
 }
+.ProtoStartPurple a:visited {
+  color: pink;
+}
+
 
 .homepageSection{
 	padding-left:   4px;
@@ -151,7 +156,7 @@ input{
 }
 
 ::-webkit-scrollbar:vertical {
-    width: 12px;
+    width: 20px; /* 20px makes it kinda beefy but IMHO not too beefy*/
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -159,9 +164,9 @@ input{
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 200, 0, .2);
-    border-radius: 10px;
-    border: 2px solid #ffffff;
+    background-color: rgba(176, 65, 210, 0.6); /*rgb part converted from #b041d2; using http://hex2rgba.devoth.com/ "a" part (the opacity) derived from trial and error!*/
+    border-radius: 10px; /* This makes each of the corners appear rounded - since scrollbars are long and thin, once you round the corners off you get the shape that looks like a rectangle with semicircles at each end */
+    border: 2px solid #ffffff; /* Sets the border to be: 2 pixels wide all around, a solid line (as opposed to dashed or dotted or anything else like that) and the colour represented by the hex colour #ffffff which is pure white*/
 }
 
 ::-webkit-scrollbar-track {
